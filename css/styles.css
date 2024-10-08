@@ -17,7 +17,6 @@
 
 img {
     max-width: 100%;
-    height: auto;
 }
 
 ul {
@@ -30,7 +29,7 @@ a {
 }
 
 hr {
-    border: 1px solid var(--white);
+    border-color: var(--white);
 }
 
 /* COMMON */
@@ -42,14 +41,14 @@ hr {
 }
 
 .section {
-    padding: 30px 0;
+    padding: 40px 0;
 }
 
 .row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 40px;
+    row-gap: 30px;
 }
 
 .col {
@@ -63,7 +62,7 @@ body {
 
 .strikethrough {
     text-decoration: line-through;
-    color: black;
+    color: var(--footer-bg);
     font-weight: 500;
 }
 
@@ -141,37 +140,31 @@ body {
     cursor: pointer;
 }
 
-.discount {
+.tag {
     z-index: 3;
     position: absolute;
+    color: var(--white);
+    padding: 3px 6px;
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+
+.discount {
     bottom: 25px;
     left: 0;
     background-color: var(--discount);
-    color: white;
-    padding: 3px 6px;
-    font-size: 0.6rem;
 }
 
 .sustainable {
-    z-index: 3;
-    position: absolute;
     bottom: 25px;
     left: 40px;
     background-color: var(--sustain);
-    color: white;
-    padding: 3px 6px;
-    font-size: 0.6rem;
 }
 
 .sustainable-first {
-    z-index: 3;
-    position: absolute;
     bottom: 30px;
     left: 0;
     background-color: var(--sustain);
-    color: white;
-    padding: 3px 6px;
-    font-size: 0.6rem;
 }
 
 .manufacturer,
@@ -197,6 +190,7 @@ footer {
     color: var(--white);
 }
 
+/* Footer Top */
 .footer-top {
     display: flex;
     justify-content: space-between;
@@ -206,7 +200,7 @@ footer {
 
 .footer-list {
     display: flex;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     gap: 10px;
 }
 
@@ -220,7 +214,7 @@ footer {
 
 .footer-icons {
     display: flex;
-    gap: 12px;
+    gap: 11px;
 }
 
 /* Utilities */
