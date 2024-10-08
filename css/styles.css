@@ -118,17 +118,19 @@ body {
     height: 100%;
 }
 
-.img-container {
+.card-top {
+    z-index: 3;
     position: relative;
+}
+
+.img-container {
     height: 350px;
-    overflow: hidden;
 }
 
 .img-container:hover .back {
     z-index: 1;
 }
 
-/* Overlays */
 .wish {
     z-index: 3;
     position: absolute;
