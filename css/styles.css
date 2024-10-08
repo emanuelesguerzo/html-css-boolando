@@ -29,14 +29,16 @@ a {
     color: inherit;
 }
 
+hr {
+    border: 1px solid var(--white);
+}
+
 /* COMMON */
 /* Layout */
 .container {
     max-width: 1100px;
     margin: 0 auto;
     width: 80%;
-    /* debug */
-    border: 1px solid black;
 }
 
 .section {
@@ -52,8 +54,6 @@ a {
 
 .col {
     width: calc(95% / 3);
-    /* debug */
-    border: 1px solid black;
 }
 
 /* Typography */
@@ -191,7 +191,37 @@ body {
     font-weight: 600;
 }
 
+/* Footer */
+footer {
+    background-color: var(--footer-bg);
+    color: var(--white);
+}
 
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer-list {
+    display: flex;
+    font-size: 0.8rem;
+    gap: 10px;
+}
+
+.footer-left h2 {
+    font-size: 0.9rem;
+}
+
+.footer-right h3 {
+    font-size: 0.8rem;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 12px;
+}
 
 /* Utilities */
 .fs-small {
@@ -200,5 +230,9 @@ body {
 
 .mt-20 {
     margin-top: 20px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
 }
 
