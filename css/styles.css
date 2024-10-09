@@ -48,11 +48,11 @@ hr {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 30px;
+    gap: 20px;
 }
 
 .col {
-    width: calc(95% / 3);
+    width: calc((100% - 40px) / 3);
 }
 
 /* Typography */
@@ -69,15 +69,16 @@ body {
 /* Header */
 .header {
     background-color: var(--header-bg);
-    box-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 999;
 }
 
 .nav {
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: 10px 0;
     font-size: 0.8rem;
@@ -150,28 +151,25 @@ body {
 .tag {
     z-index: 3;
     position: absolute;
+    bottom: 20px;
     color: var(--white);
-    padding: 3px 6px;
     font-size: 0.6rem;
     font-weight: 600;
 }
 
 .discount {
-    bottom: 25px;
-    left: 0;
     background-color: var(--discount);
+    padding: 5px;
 }
 
 .sustainable {
-    bottom: 25px;
-    left: 40px;
     background-color: var(--sustain);
+    padding: 5px;
 }
 
 .sustainable-first {
-    bottom: 30px;
-    left: 0;
     background-color: var(--sustain);
+    padding: 5px;
 }
 
 .manufacturer,
